@@ -6,10 +6,10 @@
 
 解答
 --------------------
-class Solution:
-    def findDuplicate(self, nums: List[int]) -> int:
-        backup=list.copy(nums)
-        list.sort(backup)
-        for i in range(len(nums)+1):
-            if backup[i]==backup[i+1]:
-                return backup[i]
+        class Solution:
+            def findDuplicate(self, nums: List[int]) -> int:
+                backup=list.copy(nums)
+                list.sort(backup)
+                for i in range(len(nums)+1):
+                    if backup[i]==backup[i+1]:
+                        return backup[i]
